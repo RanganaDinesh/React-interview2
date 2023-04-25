@@ -14,7 +14,7 @@ const usEffectHook = () => {
   // eslint-disable-next-line no-undef
   useEffect(() => {
     
-    fetch("https://api.thecatapi.com/v1/images/search?limit=2")
+    fetch("https://api.thecatapi.com/v1/images/search?limit=10")
       .then(response => response.json())
       .then(data => {
         setData(data);
